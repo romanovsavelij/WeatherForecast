@@ -1,6 +1,7 @@
 import string
 import requests
 from http import HTTPStatus
+from keys import OpenWeatherMapApiKey
 
 
 class InvalidFormDataError(ValueError):
@@ -22,13 +23,11 @@ class WeatherForecast:
         self.wind_speed = 0
 
     def update_forecast(self) -> None:
-        key = '31c578367136fce7972f2c3942fe0f3f'
         api = 'http://api.openweathermap.org/data/2.5/weather'
-        key = '31c578367136fce7972f2c3942fe0f3f'
 
         location = self.city + ',' + self.country
 
-        payload = {'q': location, 'units': 'metric', 'appid': key}
+        payload = {'q': location, 'units': 'metric', 'appid': OpenWeatherMapApiKey}
         r = requests.get(api, params=payload)
         if r.status_code != HTTPStatus.OK:
             raise InvalidFormDataError(f'Can\'t find forecast for {self.country}, {self.city}')

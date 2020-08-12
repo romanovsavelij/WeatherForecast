@@ -24,6 +24,7 @@ HTML, используя Bootstrap
 Затем эта HTML страница отправляется пользователю.
 
 ## Демонстрация работы
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=nu9OLiwzVWI)
 
 ## Процесс работы программы пошагово
 Сервис - сайт, который по заданной локации пользователя присылает
@@ -44,6 +45,11 @@ HTML, используя Bootstrap
 ## Установка
 ```shell script
 pip3 install requirements.txt
+```
+
+Создайте файл keys.py такого содержания:
+```python
+OpenWeatherMapApiKey = 'your_api_key'
 ```
 
 ## Запуск

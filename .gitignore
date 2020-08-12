@@ -7,3 +7,5 @@ forecast/__pycache__/
 auth/migrations/
 auth/__pycache__/
 WeatherForecast/__pycache__/
+__pycache__/
+keys.py
