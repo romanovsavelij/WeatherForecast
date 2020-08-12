@@ -1,0 +1,9 @@
+.idea/
+db.sqlite3
+venv/
+utils/__pycache__/
+forecast/migrations/
+forecast/__pycache__/
+auth/migrations/
+auth/__pycache__/
+WeatherForecast/__pycache__/
